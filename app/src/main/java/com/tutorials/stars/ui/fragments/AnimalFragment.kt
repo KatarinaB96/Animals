@@ -19,10 +19,8 @@ class AnimalFragment : BaseFragment() {
     private lateinit var binding: FragmentAnimalBinding
     private var animalAdapter: AnimalAdapter? = null
 
-
     @Inject
     lateinit var animalWithBreedsViewModel: AnimalWithBreedsViewModel
-
 
     @Inject
     lateinit var router: Router
@@ -31,21 +29,19 @@ class AnimalFragment : BaseFragment() {
         fragmentComponent.inject(this)
     }
 
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
         binding = FragmentAnimalBinding.inflate(layoutInflater)
-
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        animalWithBreedsViewModel.getAnimals()
 
+        animalWithBreedsViewModel.getAnimals()
         initAdapter()
         observeData()
     }
@@ -55,9 +51,7 @@ class AnimalFragment : BaseFragment() {
     }
 
 
-
     private fun initAdapter() {
-
         animalAdapter = AnimalAdapter { onItemClicked(it) }
 
         binding.animalsRecycler.layoutManager =

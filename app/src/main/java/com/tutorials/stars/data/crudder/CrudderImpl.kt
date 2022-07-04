@@ -42,7 +42,7 @@ class CrudderImpl(private val animalDao: AnimalDao, private val daoMapper: DaoMa
                     0,
                     1,
                     "Persian",
-                    R.drawable.persian,
+                    R.drawable.cat_persian,
                     "The first documented ancestors of Persian cats were imported into Italy from Persia around 1620",
                     false
                 )
@@ -92,8 +92,8 @@ class CrudderImpl(private val animalDao: AnimalDao, private val daoMapper: DaoMa
                 AnimalBreedDbModel(
                     0,
                     2,
-                    "Persian",
-                    R.drawable.persian,
+                    "Vietnamese Pot-bellied",
+                    R.drawable.cat_persian,
                     "The first documented ancestors of Persian cats were imported into Italy from Persia around 1620",
                     false
                 )
@@ -144,7 +144,7 @@ class CrudderImpl(private val animalDao: AnimalDao, private val daoMapper: DaoMa
                     0,
                     3,
                     "Persian",
-                    R.drawable.persian,
+                    R.drawable.cat_persian,
                     "The first documented ancestors of Persian cats were imported into Italy from Persia around 1620",
                     false
                 )

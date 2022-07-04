@@ -10,10 +10,10 @@ class AnimalsWithBreedsMapperImpl : AnimalsWithBreedsMapper {
 
 
     override fun mapToScreenModel(
-        it: List<AnimalWithBreeds>,
+        listOfAnimalWithBreeds: List<AnimalWithBreeds>,
         cocktails: List<Cocktails?>
     ): AnimalsScreenModel {
-        return AnimalsScreenModel(it.mapIndexed { index, animal  ->
+        return AnimalsScreenModel(listOfAnimalWithBreeds.mapIndexed { index, animal  ->
             AnimalScreenModel(
                 animal.id,
                 animal.type,
